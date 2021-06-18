@@ -1,33 +1,25 @@
-import React from 'react';
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
-// import Guest from './Guest/Guest';
-//  import Login from './Guest/Login';
-//  import Courses from './Guest/Courses'
-//  import StudentTab from './Routes/StudentTab'
-import { NavigationContainer } from '@react-navigation/native';
- import TeacherHome from './Teacher/TeacherHome'
- import Profile from './Teacher/Profile'
- import Homework from './Teacher/HomeWork'
- import Routes from './Teacher/routes'
+import { StatusBar } from 'expo-status-bar';
+import React, { useEffect } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import BoardingStack from './OnBoarding/BoardingStack';
+// import Login from './Course/Login';
+// import Home from './Course/Home'
+// import CourseStack from './StudentRoutes/CourseStack';
+// import StudentTab from './StudentRoutes/StudentTab';
+// import TeacherTab from './StudentRoutes/TeacherTab';
+import AdminTab from './StudentRoutes/AdminTab';
 
-export default function App() {
-  return (
-  
-    // <Courses/>
-    //  <Login/>
-    //<Profile/>
-  //  <Homework/>
-           <Routes/>
-    
-   
-  )
-}  
+const App = () => {
+return(
+  <BoardingStack/>
+  // <Login/>
+  // <Home/>
+  // <CourseStack/>
+  // <StudentTab/>
+  // <TeacherTab/>
+  // <AdminTab/>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+);
+ 
+}
+export default App;
